@@ -1,5 +1,3 @@
-function App() {
+export default function App() {
   return <p>Hello</p>;
 }
-
-export default App;
