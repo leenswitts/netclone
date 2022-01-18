@@ -1,5 +1,12 @@
 import React from "react";
 import { render } from "react-dom";
 import App from "./App";
+import GlobalStlyes from "./globalStyles";
 
-render(<App />, document.getElementById("root"));
+render(
+  <>
+    <GlobalStlyes />
+    <App />
+  </>,
+  document.getElementById("root")
+);

@@ -17,6 +17,11 @@ export const Container = styled.div``;
 
 export const Pane = styled.div`
   width: 50%;
+  @media (max-width: 1000px) {
+    width: 100%;
+    padding: 0 45px;
+    text-align: center;
+  }
 `;
 export const Title = styled.h1`
   font-size: 50px;
@@ -38,4 +43,12 @@ export const SubTitle = styled.h2`
 export const Image = styled.img`
   max-width: 100%;
   height: auto;
+`;
+
+export const Item = styled.div`
+  display: flex;
+  border-bottom: 8px solid #222;
+  padding: 50px 5%;
+  color: white;
+  overflow: hidden;
 `;

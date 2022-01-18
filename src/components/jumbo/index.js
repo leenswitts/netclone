@@ -1,7 +1,19 @@
 import react from "react";
-import { Container, Title, SubTitle, Image, Pane, Inner } from "./styles/jumbo";
+import {
+  Container,
+  Title,
+  SubTitle,
+  Image,
+  Pane,
+  Inner,
+  Item,
+} from "./styles/jumbo";
 export default function Jumbo({ children, direction = "row", ...restProps }) {
-  return <Inner direction={direction}>{children}</Inner>;
+  return (
+    <Item>
+      <Inner direction={direction}>{children}</Inner>
+    </Item>
+  );
 }
 
 Jumbo.Container = function JumboContainer({ children, ...restProps }) {
